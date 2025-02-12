@@ -2,11 +2,13 @@
 # -*- coding:utf-8 -*-
 import sys
 import os
-picdir = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'image2ink/pic')
-libdir = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'image2ink/lib')
+picdir = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'image2eink/pic')
+#libdir = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'image2ink/lib')
+libdir = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), '/home/jberman/e-Paper/RaspberryPi_JetsonNano/python/lib/')
+
 if os.path.exists(libdir):
     sys.path.append(libdir)
-
+    
 import logging
 from waveshare_epd import epd7in5bc
 import time
